@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/facultyPhotoImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/faculty_photo_placeholder"
+        android:contentDescription="@string/faculty_photo_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/faculty_photo_placeholder" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/facultyPhotoImageView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/facultyNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textStyle="bold"
+            android:text="John Doe" />
+
+        <TextView
+            android:id="@+id/facultyPhoneTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:text="(123) 456-7890" />
+
+        <TextView
+            android:id="@+id/facultyEmailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:text="jdoe@ucc.edu" />
+
+    </LinearLayout>
+
+</RelativeLayout>

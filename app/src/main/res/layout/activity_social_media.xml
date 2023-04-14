@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Social Media title -->
+    <TextView
+        android:id="@+id/social_media_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Social Media"
+        android:textSize="24sp" />
+
+    <!-- Facebook button -->
+    <Button
+        android:id="@+id/facebook_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Facebook" />
+
+    <!-- Twitter button -->
+    <Button
+        android:id="@+id/twitter_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Twitter" />
+
+    <!-- Instagram button -->
+    <Button
+        android:id="@+id/instagram_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Instagram" />

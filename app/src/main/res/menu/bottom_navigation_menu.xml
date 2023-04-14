@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_faculty"
+        android:icon="@drawable/ic_faculty"
+        android:layout_width="95dp"
+        android:layout_height="91dp"
+        android:title="@string/faculty_staff_directory" />
+    <item
+        android:id="@+id/menu_courses"
+        android:icon="@drawable/ic_courses"
+        android:title="@string/courses" />
+    <item
+        android:id="@+id/menu_admissions"
+        android:icon="@drawable/ic_admissions"
+        android:title="@string/admissions"/>
+    <item
+        android:id="@+id/menu_social_media"
+        android:icon="@drawable/ic_social_media"
+        android:title="social_media" />
+</menu>

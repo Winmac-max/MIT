@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MIT</string>
+    <string name="faculty_photo_description" />
+    <string name="admissions">admissions</string>
+    <string name="social_media">Social Media</string>
+    <string name="courses">courses</string>
+    <string name="faculty_staff_directory">Faculty/Staff Directory</string>
+</resources>

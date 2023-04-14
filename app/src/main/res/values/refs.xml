@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="ic_social_media">social media</drawable>
+    <drawable name="ic_admissions">admissions</drawable>
+    <drawable name="ic_courses">courses</drawable>
+    <drawable name="ic_faculty">faculty</drawable>
+</resources>
