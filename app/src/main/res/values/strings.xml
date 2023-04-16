@@ -5,4 +5,5 @@
     <string name="social_media">Social Media</string>
     <string name="courses">courses</string>
     <string name="faculty_staff_directory">Faculty/Staff Directory</string>
+    <string name="FacultyActivity">facultyactivity</string>
 </resources>

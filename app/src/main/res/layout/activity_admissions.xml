@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -20,7 +21,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:text="Admissions Requirements:\n\n- Minimum GPA of 3.0\n- SAT/ACT scores\n- Essay\n- Letters of recommendation"
-        android:textSize="16sp" />
+        android:textSize="18sp" />
 
     <!-- Apply button -->
     <Button
@@ -28,6 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Apply Now" />
+        android:text="Apply Now"
+        tools:ignore="VisualLintButtonSize" />
 
 </LinearLayout>

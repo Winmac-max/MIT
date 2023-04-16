@@ -20,8 +20,8 @@ class FacultyActivity : AppCompatActivity() {
         // Initialize the list of faculty members with their photo images
         val facultyList = listOf(
             FacultyMember( R.drawable.professor,"John Doe", "123-456-7890", "jdoe@ucc.edu"),
-            FacultyMember(R.drawable.lecturer"Jane Smith", "234-567-8901", "jsmith@ucc.edu"),
-            FacultyMember(R.drawable.assist_professor"Bob Johnson", "345-678-9012", "bjohnson@ucc.edu")
+            FacultyMember(R.drawable.lecturer,"Jane Smith", "234-567-8901", "jsmith@ucc.edu"),
+            FacultyMember(R.drawable.assist_professor,"Bob Johnson", "345-678-9012", "bjohnson@ucc.edu")
         )
 
         // Set up the RecyclerView

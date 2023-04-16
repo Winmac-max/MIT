@@ -1,53 +1,32 @@
-package com.example.mit
-
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import android.widget.ImageView
+import android.widget.TextView
+import com.example.mit.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-// Initialize the menu
-        val menu = findViewById<BottomNavigationView>(R.id.menu)
 
-        // Set up the menu items
-        menu.setOnNavigationItemSelectedListener { menuItem ->
-            when (menuItem.itemId) {
-                R.id.menu_faculty -> {
-                    // Handle the Faculty/Staff Directory option
-                    // Start the FacultyActivity
-                    startActivity(Intent(this, FacultyActivity::class.java))
-                    return@setOnNavigationItemSelectedListener true
-                }
-                R.id.menu_courses -> {
-                    // Handle the Courses option
-                    // Start the CoursesActivity
-                    startActivity(Intent(this, CoursesActivity::class.java))
-                    return@setOnNavigationItemSelectedListener true
-                }
-                R.id.menu_admissions -> {
-                    // Handle the Admissions option
-                    // Start the AdmissionsActivity
-                    startActivity(Intent(this, AdmissionsActivity::class.java))
-                    return@setOnNavigationItemSelectedListener true
-                }
-                R.id.menu_social_media -> {
-                    // Handle the Social Media option
-                    // Start the SocialMediaActivity
-                    startActivity(Intent(this, SocialMediaActivity::class.java))
-                    return@setOnNavigationItemSelectedListener true
-                }
-                R.id.menu_email_fab -> {
-                    // Handle the Email FAB option
-                    // Start the EmailActivity
-                    startActivity(Intent(this, EmailActivity::class.java))
-                    return@setOnNavigationItemSelectedListener true
-                }
-                else -> return@setOnNavigationItemSelectedListener false
-            }
-        }
+        val imageViewFaculty = findViewById<ImageView>(R.id.imageViewFaculty)
+        val textViewFaculty = findViewById<TextView>(R.id.textViewFaculty)
+        imageViewFaculty.setImageResource(R.drawable.ic_faculty)
+        textViewFaculty.text = getString(R.string.faculty_staff_directory)
+
+        val imageViewCourses = findViewById<ImageView>(R.id.imageViewCourses)
+        val textViewCourses = findViewById<TextView>(R.id.textViewCourses)
+        imageViewCourses.setImageResource(R.drawable.ic_courses)
+        textViewCourses.text = getString(R.string.courses)
+
+        val imageViewAdmissions = findViewById<ImageView>(R.id.imageViewAdmissions)
+        val textViewAdmissions = findViewById<TextView>(R.id.textViewAdmissions)
+        imageViewAdmissions.setImageResource(R.drawable.ic_admissions)
+        textViewAdmissions.text = getString(R.string.admissions)
+
+        val imageViewSocialMedia = findViewById<ImageView>(R.id.imageViewSocialMedia)
+        val textViewSocialMedia = findViewById<TextView>(R.id.textViewSocialMedia)
+        imageViewSocialMedia.setImageResource(R.drawable.ic_social_media)
+        textViewSocialMedia.text = getString(R.string.social_media)
     }
 }
-

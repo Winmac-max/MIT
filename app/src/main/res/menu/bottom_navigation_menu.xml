@@ -1,21 +1,111 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/menu_faculty"
-        android:icon="@drawable/ic_faculty"
+<?xml version="1.0" encoding="utf-8"?
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewFaculty"
+        app:layout_constraintBottom_toTopOf="@id/textViewFaculty"
+        app:layout_constraintEnd_toStartOf="@id/textViewFaculty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="95dp"
         android:layout_height="91dp"
-        android:title="@string/faculty_staff_directory" />
-    <item
-        android:id="@+id/menu_courses"
-        android:icon="@drawable/ic_courses"
-        android:title="@string/courses" />
-    <item
-        android:id="@+id/menu_admissions"
-        android:icon="@drawable/ic_admissions"
-        android:title="@string/admissions"/>
-    <item
-        android:id="@+id/menu_social_media"
-        android:icon="@drawable/ic_social_media"
-        android:title="social_media" />
-</menu>
+        android:contentDescription="@string/faculty_staff_directory"
+        android:src="@drawable/staff_directory"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <TextView
+        android:id="@+id/textViewFaculty"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewFaculty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageViewFaculty"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/faculty_staff_directory"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="237dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <ImageView
+        android:id="@+id/imageViewCourses"
+        app:layout_constraintBottom_toTopOf="@id/textViewCourses"
+        app:layout_constraintEnd_toStartOf="@id/textViewCourses"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewFaculty"
+        android:layout_width="95dp"
+        android:layout_height="91dp"
+        android:contentDescription="@string/courses"
+        android:src="@drawable/courses"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="116dp" />
+
+    <TextView
+        android:id="@+id/textViewCourses"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewCourses"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageViewCourses"
+        app:layout_constraintTop_toBottomOf="@id/textViewFaculty"
+        android:layout_width="89dp"
+        android:layout_height="19dp"
+        android:text="@string/courses"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <ImageView
+        android:id="@+id/imageViewAdmissions"
+        app:layout_constraintBottom_toTopOf="@id/textViewAdmissions"
+        app:layout_constraintEnd_toStartOf="@id/textViewAdmissions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewCourses"
+        android:layout_width="95dp"
+        android:layout_height="91dp"
+        android:contentDescription="@string/admissions"
+        android:src="@drawable/admissions"
+        tools:layout_editor_absoluteX="246dp"
+        tools:layout_editor_absoluteY="329dp" />
+
+    <TextView
+        android:id="@+id/textViewAdmissions"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewAdmissions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageViewAdmissions"
+        app:layout_constraintTop_toBottomOf="@id/textViewCourses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/admissions"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="246dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <ImageView
+        android:id="@+id/imageViewSocialMedia"
+        app:layout_constraintStart_toEndOf="@+id/textViewAdmissions"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/social_media"
+        android:layout_width="95dp"
+        android:layout_height="91dp"
+        android:contentDescription="@string/social_media"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="329dp" />
+
+    <TextView
+        android:id="@+id/textViewSocialMedia"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSocialMedia"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/social_media"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="438dp" />
+    </menu>
+
+
+
