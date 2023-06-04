@@ -1,5 +1,6 @@
 package com.example.mit
 
+import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
@@ -91,7 +92,8 @@ class CourseDatabase (context: Context) : SQLiteOpenHelper(context, DATABASE_NAM
         onCreate(db)
     }
 
-    fun getAllCourses(): List<Course> {
+    @SuppressLint("Range")
+    fun getAllCourses() {
         val courseList = mutableListOf<Course>()
 
         val query = "SELECT * FROM $TABLE_NAME"

@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">MIT</string>
+    <string name="app_name">UCC</string>
     <string name="faculty_photo_description" />
     <string name="admissions">admissions</string>
     <string name="social_media">Social Media</string>
     <string name="courses">courses</string>
     <string name="faculty_staff_directory">Faculty/Staff Directory</string>
     <string name="FacultyActivity">facultyactivity</string>
+    <string name="email_hod">ithod@ucc.edu.jm</string>
+    <string name="email_fab_title">fab_email</string>
 </resources>
